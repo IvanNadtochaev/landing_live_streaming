@@ -1,0 +1,32 @@
+@use 'variables' as v;
+
+%hover-scale-nav{
+    &:hover{
+        cursor: pointer;
+        scale: 1.1;
+        transition: scale 0.2s ease-in-out;
+        text-shadow: 0.25px -0.1px 2px v.$color_white;
+    }
+}
+
+%scale-nav{
+    scale: 1;
+    transition: scale 0.2s ease-in-out;
+}
+
+%rotate-icon{
+        scale: 1;
+        rotate: 0;
+        fill: v.$color_white;
+        transition: all 0.35s ease-in-out;
+}
+
+%hover-rotate-icon{
+    &:hover{
+        cursor: pointer;
+        scale: 1.2;
+        rotate: 360deg;
+        fill: v.$color_black;
+        transition: all 0.35s ease-in-out;
+    }
+}
